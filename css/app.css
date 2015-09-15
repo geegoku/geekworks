@@ -1,0 +1,10 @@
+.site-wrapper-inner {
+    background-image: url("../img/room.jpg");
+    background-position: center center;
+    background-size: cover;
+    min-height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+}
