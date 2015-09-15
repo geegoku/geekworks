@@ -9,6 +9,11 @@
   <meta name="author" content="">
   <!--<link rel="icon" href="img/favicon.ico">-->
 
+  <!-- material design -->
+  <link rel="stylesheet" href="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.indigo-pink.min.css">
+  <script src="https://storage.googleapis.com/code.getmdl.io/1.0.0/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   <title>Geek Works</title>
 
   <!-- Bootstrap core CSS and library -->
@@ -22,28 +27,47 @@
 
 <body id="home">
 
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="custom-header mdl-layout__header mdl-layout__header--waterfall">
+        <div class="mdl-layout__header-row">
+            <span class="mdl-layout-title">Geek Works</span>
+            <div class="mdl-layout-spacer"></div>
+            <nav class="mdl-navigation mdl-layout--large-screen-only">
+                <a class="mdl-navigation__link" href="#home">What's Geek Works?</a>
+                <a class="mdl-navigation__link" href="#team">Team</a>
+                <a class="mdl-navigation__link" href="#mission">Our Mission</a>
+                <a class="mdl-navigation__link" href="#access">Access</a>
+            </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Sidebar Menu</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#home">What's Geek Works?</a>
+            <a class="mdl-navigation__link" href="#team">Team</a>
+            <a class="mdl-navigation__link" href="#mission">Our Mission</a>
+            <a class="mdl-navigation__link" href="#access">Access</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content"><!-- Your content goes here --></div>
+    </main>
+</div>
+
+
 <div class="site-wrapper">
   <div class="site-wrapper-inner">
     <div class="cover-container">
-      <div class="navbar navbar-inverse navbar-fixed-top wow bounceIn" style="background-color: rgba(50, 50, 50, 0.8);">
-        <div style="margin: 5px 50px;">
-          <h3 class="masthead-brand"><a data-scroll href="#home" style="text-decoration:none;">Geek Works</a></h3>
-          <nav class="nav nav-masthead">
-            <a data-scroll class="nav-link active" href="#home">Home</a>
-            <a data-scroll class="nav-link" href="#team">Team</a>
-            <a data-scroll class="nav-link" href="#mission">Mission</a>
-            <a data-scroll class="nav-link" href="#access">Access</a>
-          </nav>
-        </div>
-      </div>
 
       <div class="inner cover wow bounceIn">
-        <h1 class="cover-heading">Geek Works × Geek House<br>両国</h1>
+        <h1 class="cover-heading">
+          <span class='geek'>Geek</span><br>
+          <span class='works'>Works × House</span><br>
+          <span class='ryogoku'>RYOGOKU</span>
+        </h1>
         <br>
         <h3>ギークは楽しさから始まる。</h3>
-        <p class="lead">
-          <a data-scroll href="#geekworks" class="btn btn-lg btn-primary">Click me</a>
-        </p>
       </div>
     </div>
   </div>
@@ -174,31 +198,20 @@
   </div>
     <div class="row ">
     <table class="table  text-left">
-      <thead class="thead-inverse">
-        <tr>
-          <th>#</th>
-          <th></th>
-          <th>名称</th>
-          <th>内容</th>
-        </tr>
-      </thead>
       <tbody>
       <tr class="wow flipInX">
-        <th scope="row">1</th>
         <td><img src="img/mission_geeryo.jpg" width="100px" sizes="100px"></td>
         <td>極秘プロジェクト</td>
         <td><p>ギー両の地下には、地下施設があるという噂…その秘密とは…。<br>
           メンバー外秘の割と真面目なプロジェクト。</p></td>
       </tr>
       <tr class="wow flipInX">
-        <th scope="row">2</th>
         <td><img src="img/mission_social.jpg" width="100px" sizes="100px"></td>
         <td>ソーシャル事業</td>
         <td><p>人と人の繋がりには、不思議なエナジー効果がある。<br>
           人の繋がりを、いかに楽しむかを研究するソーシャル事業部。</p></td>
       </tr>
       <tr class="wow flipInX">
-        <th scope="row">3</th>
         <td><img src="img/mission_game.jpg" width="100px" sizes="100px"></td>
         <td>ゲーム事業</td>
         <td><p>ボードゲームをやったり、紙媒体のゲームを作ったり、<br>
@@ -230,7 +243,7 @@
 
 <!--<div class="container wow zoomInUp">-->
 <div class="container">
-  <div class="row">
+  <div class="row access">
     <h2 class="text-primary">Access</h2>
     <div class="col-md-6 wow slideInLeft">
       <div id="map_canvas" style=";height:400px;"></div>
