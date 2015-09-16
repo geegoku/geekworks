@@ -73,17 +73,31 @@ table tr:nth-child(2n) {
   width: 250px;
 }
 
-.access .slideInLeft{
+.access #map_canvas {
   height: 400px;
-  width: 420px;
 }
 
-.access .card {
+.access .thumbnail {
   height: 400px;
-  width: 420px;
-  margin-left: 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.access img {
+  height:250px;
 }
 
 footer {
   margin-top: 30px;
+}
+
+.custom-header {
+  position: fixed;
+}
+
+.firstView {
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
 }
