@@ -3,7 +3,6 @@
     background-position: center center;
     background-size: cover;
     min-height: 100%;
-    display: flex;
     align-items: center;
     color: white;
     justify-content: center;
@@ -71,6 +70,10 @@ table tr:nth-child(2n) {
 .card {
   height: 300px;
   width: 250px;
+}
+
+.team .thumbnail {
+  height: 250px;
 }
 
 .access #map_canvas {
