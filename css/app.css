@@ -73,15 +73,17 @@ table tr:nth-child(2n) {
   width: 250px;
 }
 
-.access .slideInLeft{
+.access #map_canvas {
   height: 400px;
-  width: 420px;
 }
 
-.access .card {
+.access .thumbnail {
   height: 400px;
-  width: 420px;
-  margin-left: 30px;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+}
+.access img {
+  height:250px;
 }
 
 footer {
